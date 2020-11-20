@@ -12,7 +12,8 @@ namespace PascalTriangle
 
         static void BinaryTriangle()
         {
-            int number = 129;
+            Console.WriteLine("Введите номер функции");
+            int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Номер функции: " + number);
             string dn = Convert.ToString(number, 2);
             Console.WriteLine("Номер функции в двоичной системе счисления: " + dn);
