@@ -72,6 +72,13 @@ namespace PascalTriangle
                 str = null;//Обнуляем строковую переменную str
             }
 
+            Console.WriteLine("Коэффициенты полинома Жегалкина:");
+            Console.WriteLine(arrbool[0] == true ? "1" : "0");
+            for (int n = dnumber.Length, c = 1; n<arrbool.Length && c<dnumber.Length; n += dnumber.Length - c, c++)
+            {
+                Console.WriteLine(arrbool[n] == true ? "1" : "0");
+            }
+
         }
     }
 }
